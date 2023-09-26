@@ -24,5 +24,4 @@ O projeto é organizado da seguinte forma:
 1. Clone este repositório para o seu computador:
 
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
-
+git clone https://github.com/eDrumms/tavarezz-prj.git

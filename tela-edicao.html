@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
+<head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edição de Usuário</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f4f4f4;
             margin: 0;
             padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
         }
 
         .container {
-            max-width: 400px;
+            max-width: 800px;
+            margin: 0 auto;
             padding: 45px;
             background-color: #fff;
             border-radius: 8px;
@@ -40,14 +41,18 @@
         input[type="text"], input[type="password"], select {
             width: 100%;
             padding: 12px;
-            border: 1px solid #ccc;
+            border: none;
             border-radius: 5px;
             outline: none;
             margin-bottom: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+            font-size: 16px;
         }
 
         select {
             padding: 10px;
+            background-color: #fff;
         }
 
         button {
@@ -60,10 +65,17 @@
             width: 100%;
             font-weight: bold;
             font-size: 16px;
+            transition: background-color 0.3s ease;
         }
 
         button:hover {
             background-color: #0056b3;
+        }
+
+        @media screen and (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
         }
     </style>
 </head>
@@ -130,7 +142,8 @@
 
             // Redireciona de volta para a tela principal (index.html)
             window.location.href = "index.html";
-        });
+        }); 
     </script>
 </body>
 </html>
+<!-- Compare this snippet from tavarezz-prj/tela-edicao.html: -->

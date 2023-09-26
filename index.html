@@ -77,6 +77,31 @@
         button:hover {
             background-color: #0056b3;
         }
+
+        /* Estilos responsivos */
+        @media only screen and (max-width: 768px) {
+            .container {
+                max-width: 90%;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+            h1 {
+                font-size: 24px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            input[type="text"], input[type="password"], select {
+                font-size: 14px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -112,7 +137,7 @@
             var cell3 = newRow.insertCell(2);
 
             cell1.innerHTML = nome;
-            cell2.innerHTML = email;
+            cell2.innerHTML = email; 
             cell3.innerHTML = '<button class="editar">Editar</button> <button class="excluir">Excluir</button>';
         }
 
